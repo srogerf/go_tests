@@ -1,13 +1,15 @@
-package test1
+package main
 
 import (
 	"log"
 	"os"
+	"fmt"
 )
 
 func init() {
-	log.F
+	log.SetOutput(os.Stdout)
+	log.Fatal("cc")
 }
 func main() {
-	log.SetOutput(os.Stdout)
+	fmt.Printf("helloi\n\n")
 }
