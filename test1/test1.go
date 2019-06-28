@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	_ "github.com/srogerf/go_tests/test1/errors"
 	"github.com/srogerf/go_tests/test1/loops"
 	"github.com/srogerf/go_tests/test1/structs"
 	"log"
