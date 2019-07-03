@@ -4,8 +4,10 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	_ "github.com/srogerf/go_tests/test1/errors"
+	_ "github.com/srogerf/go_tests/test1/files"
 	"github.com/srogerf/go_tests/test1/loops"
 	"github.com/srogerf/go_tests/test1/structs"
+	"github.com/srogerf/meta_fix/file_scan"
 	"log"
 	"net/http"
 	"os"
@@ -21,6 +23,7 @@ func main() {
 	loops.Run()
 	structs.Run()
 
+	file_scan.List("x:/video/downloaded/television/")
 	e := echo.New()
 
 	// Middleware
